@@ -1,1 +1,194 @@
-/* Add CSS styling here */
+/* 
+=============================
+Reset 
+=============================
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+=============================
+Custom styles 
+=============================
+*/
+
+html, 
+body {
+    font: 62.5% Lato, Serif;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 10px 20px 10px 10px;
+}
+
+article {
+    padding: 5%
+}
+/* 
+=============================
+header
+=============================
+*/
+header {
+    background: #e0c18d;
+    border-bottom: 4px dashed silver;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.head {
+    min-height: 15vh;
+}
+
+.head p {
+    font-size: 4rem;
+}
+
+nav {
+    padding: 1% 10%;
+}
+
+/* 
+=============================
+button
+=============================
+*/
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background: #bcc932;
+}
+
+button:hover {
+    border: 1px solid black;
+    background: #fff238;
+    color: lightslategrey;
+}
+
+/* 
+=============================
+classes
+=============================
+*/
+
+.flex1 {
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+.flex2 {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flexelt {
+    flex: 1 1 0;
+}
+
+
+
+.flex1 div img {
+    display: content-box;
+    background: grey;
+    border: 1px solid lightcoral;
+    margin: 25px 0 5px 0;
+    max-width: 400px;
+    height: 266.5px;
+    padding: 1%;
+}
+
+.flex1 .flexelt img {
+    max-width: 600px;
+    height: auto;
+}
+
+footer.flex2 {
+    background: #e0c18d;
+    border-top: 4px dashed silver;
+    align-items: center;
+    padding-top: 25px;
+    font-size: 2rem;;
+}
+
+.flex1 .profile img {
+    border-radius: 50%;
+    width: 200px;
+    height: 230px;
+    margin: 0 150px;
+}
+
+.line {
+    padding: 15px;
+    margin:20px 20px 0 20px;
+    text-align: center;
+}
+.line p {
+    font-size: 1.5rem;
+    color: white;
+    background:lightseagreen;
+    padding: 8%;
+    border: 3px solid gray;
+    margin: 45px;
+}
+
+main {
+    background: linear-gradient(#ebf1f4, #47b2ef);
+}

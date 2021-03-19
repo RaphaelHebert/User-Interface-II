@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./style/index.css" />
+    <!-- Title -->
+    <title>Portfolio</title>
 </head>
 <body>
-    
+    <header class="head">
+        <p>Raphael Hebert</p>
+        <nav class='flex1'>
+            <button onclick="location.href='/about.html';">About</button>
+            <button onclick="location.href='/projects.html';">Projects</button>
+            <button onclick="location.href='/contact.html';">Contact</button>
+        </nav>
+    </header>
+    <main>
+        <!-- filling the space under the header fixed element-->
+        <div class="head">
+            <p>Raphael Hebert</p>
+            <nav class='flex1'>
+                <button onclick="location.href='/about.html';">About</button>
+                <button onclick="location.href='/projects.html';">Projects</button>
+                <button onclick="location.href='/contact.html';">Contact</button>
+            </nav>
+        </div> 
+        
+        <section class='flex1'>
+            <div class="flexelt">
+                <img src="/assets/images/pipy.png" alt="picture 1" />
+            </div>
+             <article class="flex2 flexelt">
+                <h1>Raphael Hebert</h1>
+                <button onclick="location.href='projects.html';">My projects</button>
+                <p>
+                    I'm pationate about coding. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! 
+                </p>
+            </article>  
+        </section>
+        <section class="flex1">
+            <div>
+                <a href="https://pypi.org/project/nsdpy/" target="_blank"><img src="/assets/images/pipy.png" alt="pipy screen" /></a>
+                <p>nsdpy python package</p>
+            </div>
+            <div>
+                <img src="/assets/images/lab.jpg" alt="picture 2" />
+                <p>picture 2</p>
+            </div>
+                
+            <div>
+                <img src="/assets/images/food.jpg" alt="picture 3" />
+                <p>picture 3</p>
+            </div>
+            <div>
+                <img src="/assets/images/swim.jpg" alt="picture 4" />
+                <p>picture 4</p>
+            </div>
+            <div>
+                <img src="/assets/images/ai.jpg" alt="picture 5" />
+                <p>picture 5</p>
+            </div>
+            <div>
+                <img src="/assets/images/litterature.jpg" alt="picture 6" />
+                <p>picture 6</p>
+            </div>
+            <div>
+                <img src="/assets/images/img1.jpg" alt="picture 7" />
+                <p>picture 7</p>
+            </div>
+            <div>
+                <img src="/assets/images/mainpic.jpg" alt="picture 8" />
+                <p>picture 8</p>
+            </div>
+        </section>
+    </main>
+    <footer class="flex2">
+        <p>Like what you see?</p>
+        <button onclick="location.href='contact.html';">Contact Me</button>
+    </footer>
 </body>
 </html>
