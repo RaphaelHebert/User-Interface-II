@@ -84,6 +84,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 .head {
@@ -148,11 +149,38 @@ classes
 .flex1 div img {
     display: content-box;
     background: grey;
-    border: 1px solid lightcoral;
-    margin: 25px 0 5px 0;
+    border: 2px solid lightcoral;
     max-width: 400px;
     height: 266.5px;
     padding: 1%;
+}
+
+
+
+.comment {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    font-size: 2rem;
+    text-align: center;
+    visibility: hidden;
+}
+
+.back {
+    position: relative;
+    color: red;
+    text-align: center;
+}
+
+.back:hover {
+    opacity: 20%;
+}
+.back:hover .comment{
+    opacity: 100%;
+    visibility: visible;
 }
 
 .flex1 .flexelt img {
@@ -192,3 +220,37 @@ footer.flex2 {
 main {
     background: linear-gradient(#ebf1f4, #47b2ef);
 }
+/* 
+=============================
+social media from w3school
+=============================
+*/
+/* Style all font awesome icons */
+.fa {
+    border-radius: 60px;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
