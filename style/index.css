@@ -62,6 +62,10 @@ Custom styles
 html, 
 body {
     font: 62.5% Lato, Serif;
+} 
+
+main {
+    background: linear-gradient(#ebf1f4, #47b2ef);
 }
 
 h1 {
@@ -72,6 +76,7 @@ h1 {
 article {
     padding: 5%
 }
+
 /* 
 =============================
 header
@@ -145,49 +150,6 @@ classes
 }
 
 
-
-.flex1 div img {
-    display: content-box;
-    background: grey;
-    border: 2px solid lightcoral;
-    max-width: 400px;
-    height: 266.5px;
-    padding: 1%;
-}
-
-
-
-.comment {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 0;
-    font-size: 2rem;
-    text-align: center;
-    visibility: hidden;
-}
-
-.back {
-    position: relative;
-    color: red;
-    text-align: center;
-}
-
-.back:hover {
-    opacity: 20%;
-}
-.back:hover .comment{
-    opacity: 100%;
-    visibility: visible;
-}
-
-.flex1 .flexelt img {
-    max-width: 600px;
-    height: auto;
-}
-
 footer.flex2 {
     background: #e0c18d;
     border-top: 4px dashed silver;
@@ -195,6 +157,62 @@ footer.flex2 {
     padding-top: 25px;
     font-size: 2rem;;
 }
+
+.mainimg {
+    max-width: 600px
+}
+
+.imggal {
+    background: grey;
+    box-sizing: content-box;
+    max-width: 380px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.wrap {
+    position: relative;
+}
+
+.imgback {
+    box-sizing: content-box;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 380px;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 0;
+    margin: inherit;
+    background: grey;
+    font-size: 3.5rem;
+
+}
+
+.wrap:hover .imgback {
+    visibility: visible;
+}
+
+.imgback:hover {
+    visibility: visible;
+    opacity: .9;
+    border: inherit;
+    background: grey;
+    cursor: pointer;
+    color: white;
+}
+
+.element {
+    margin: 30px 20px;
+}
+/* 
+=============================
+about me
+=============================
+*/
 
 .flex1 .profile img {
     border-radius: 50%;
@@ -217,15 +235,14 @@ footer.flex2 {
     margin: 45px;
 }
 
-main {
-    background: linear-gradient(#ebf1f4, #47b2ef);
-}
 /* 
 =============================
 social media from w3school
 =============================
 */
+
 /* Style all font awesome icons */
+
 .fa {
     border-radius: 60px;
     padding: 20px;
