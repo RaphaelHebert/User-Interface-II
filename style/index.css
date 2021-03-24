@@ -271,3 +271,49 @@ social media from w3school
     color: white;
   }
 
+/* 
+===============================
+media query
+===============================
+*/
+/* dropdown */
+
+.drop {
+    display: none;
+    width: 64px;
+    height: 64px;
+    background: darkcyan;
+    margin: 10px 20px;
+}
+
+.menu {
+    display: none;
+}
+
+.drop:hover .menu {
+    display: flex;
+    flex-flow: column wrap;
+    cursor:text;
+}
+
+.menu button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .drop {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .menu button {
+        margin: 0;
+        border-radius: 1px;
+        background: grey;
+        color: white;
+        width: 150px;
+        border: 1px solid black;
+    }
+    .bar {
+        display: none;
+    }
+}
