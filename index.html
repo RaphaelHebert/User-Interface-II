@@ -10,45 +10,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <!-- CSS  -->
-    <link rel="stylesheet" href="./style/index.css" />
+    <link rel="stylesheet" href="./style/mobile.css" />
     <!-- Title -->
     <title>Portfolio</title>
 </head>
 <body>
+    <!-- <section class="welcome">
+        <p>Raphael</p>
+        <p class="welcometitle">Web Design.</p>
+        <p class="welcometwo">explore..</p>
+    </section> -->
     <header class="head">
         <p>Raphael Hebert</p>
-        <nav class='flex1 bar'>
-            <button onclick="location.href='/about.html';">About</button>
-            <button onclick="location.href='/projects.html';">Projects</button>
-            <button onclick="location.href='/contact.html';">Contact</button>
-        </nav>
-        <div class="drop">
-            <img src="./assets/icons/drop-down.png" alt="drop down-icon" />
-            <section class="dropdown">
-                <div class="menu">
-                    <button onclick="location.href='/about.html';">About</button>   
-                    <button onclick="location.href='/projects.html';">Projects</button>
-                    <button onclick="location.href='/contact.html';">Contact</button>
-                </div>
-            </section>
-        </div>
-    </header>
-    <main>
-        <!-- filling the space under the header fixed element-->
-        <div class="head">
-            <p>Raphael Hebert</p>
-            <nav class='flex1'>
+        <div class="medium">
+            <nav class="flexsize">
                 <button onclick="location.href='/about.html';">About</button>
                 <button onclick="location.href='/projects.html';">Projects</button>
                 <button onclick="location.href='/contact.html';">Contact</button>
             </nav>
-        </div> 
-        
-        <section class='flex1'>
-            <div class="flexelt">
-                <img src="/assets/images/pipy.png" alt="picture 1" class="mainimg"/>
+        </div>
+        <div class="drop">
+            <!-- Dopdown menu -->
+            <div class="around">
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+                <div class="bar1"></div>
             </div>
-             <article class="flex2 flexelt">
+            <!-- menu -->
+            <section class="dropdown">
+                <section class="menu">
+                    <button onclick="location.href='/about.html';">About</button>   
+                    <button onclick="location.href='/projects.html';">Projects</button>
+                    <button onclick="location.href='/contact.html';">Contact</button>
+                </section>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section class='flexsize'>
+            <img src="/assets/images/pipy.png" alt="picture 1" class="mainimg"/>
+            <article class="flexcol">
                 <h1>Raphael Hebert</h1>
                 <button onclick="location.href='projects.html';">My projects</button>
                 <p>
@@ -61,71 +62,71 @@
                 </p>
             </article>  
         </section>
-        <section class="flex1">
-            <div class="element">
+        <section class="flexline">
+            <div class="element flexcol">
                 <div class="wrap">
                     <img src="/assets/images/pipy.png" alt="pipy screen" class="imggal"/>
                     <button class="imgback" onclick="location.href='https://pypi.org/project/nsdpy/';"> Go to NSDPY page</button>
                 </div>
                 <p>nsdpy python package</p>
             </div>
-            <div class="element">
+            <div class="element flexcol">
                 <div class="wrap">
                     <img src="/assets/images/lab.jpg" alt="lab" class="imggal"/>
                     <button class="imgback" onclick="location.href='https://chromatofast0.herokuapp.com/';"> Go to GCapp</button>
                 </div>
                 <p>GCapp: a calculator for chromatography</p>
             </div>
-            <div class="element">
+            <div class="element flexcol">
                 <div class="wrap">
                     <img src="/assets/images/food.jpg" alt="food" class="imggal"/>
                     <button class="imgback" onclick="location.href='#';"> Go to eat!</button>
                 </div>
                 <p>I love eating, happy me...</p>
             </div>
-            <div class="element">
+            <div class="element flexcol">
                 <div class="wrap">
                     <img src="/assets/images/swim.jpg" alt="swimmer" class="imggal"/>
                     <button class="imgback" onclick="location.href='#';"> Go to swim!</button>
                 </div>
                 <p>Swimming is so much fun</p>
             </div>
-            <div class="element">
+            <div class="element flexcol">
                 <div class="wrap">
                     <img src="/assets/images/ai.jpg" alt="ai" class="imggal"/>
                     <button class="imgback" onclick="location.href='#';"> Join the AI!</button>
                 </div>
                 <p>Will AI be our future?</p>
             </div>
-            <div class="element">
+            <div class="element flexcol">
                 <div class="wrap">
                     <img src="/assets/images/litterature.jpg" alt="litterature" class="imggal"/>
                     <button class="imgback" onclick="location.href='#';">Chill with a good book</button>
                 </div>
                 <p>There's nothing better than a good book</p>
             </div>
-            <div class="element">
+            <div class="element flexcol">
                 <div class="wrap">
-                    <img src="/assets/images/img1.jpg" alt="ing1" class="imggal"/>
+                    <img src="/assets/images/img1.jpg" alt="img1"/>
                     <button class="imgback" onclick="location.href='#';">Take me anywhere</button>
                 </div>
                 <p>Let's go random, unknow is always interesting</p>
             </div>
-            <div class="element">
+            <div class="element flexcol">
                 <div class="wrap">
-                    <img src="/assets/images/img1.jpg" alt="ing1" class="imggal"/>
+                    <img src="/assets/images/img1.jpg" alt="img1"/>
                     <button class="imgback" onclick="location.href='#';">Take me anywhere</button>
                 </div>
                 <p>Let's go random, unknow is always interesting</p>
             </div>
         </section>
     </main>
-    <footer class="flex1">
-        <div class="flex2">
+    <footer class="flexcol">
+        <div>
             <p>Like what you see?</p>
             <button onclick="location.href='contact.html';">Contact Me</button>
         </div>
-        <div class="flex1">
+        <div class='social'>
             <a href="https://twitter.com/Joe84196982" class="fa fa-facebook"></a>
             <a href="facebook.com" class="fa fa-twitter"></a> 
         </div>
