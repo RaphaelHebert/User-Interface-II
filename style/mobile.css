@@ -1,0 +1,379 @@
+/* 
+=============================
+Reset 
+=============================
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+=============================
+Custom styles 
+=============================
+*/
+
+html, 
+body {
+    font: 62.5% Lato, Serif;
+    background: linear-gradient(#ebf1f4, #47b2ef);
+    position: relative;
+} 
+
+h1 {
+    font-size: 3rem;
+    padding: 10px 20px 10px 10px;
+}
+
+nav {
+    padding: 1% 10%;
+}
+
+p {
+    padding: 20px;
+}
+
+/* todo: addapt padding bottom for footer */
+main {
+    font-size: 1.24rem;;
+    padding: 140px 20px 10px 20px;
+}
+
+img {
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+/* 
+=============================
+header
+=============================
+*/
+
+header {
+    background: #e0c18d;
+    border-bottom: 4px dashed silver;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.head {
+    min-height: 15vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.head p {
+    font-size: 2.5rem;
+    text-align: center;
+}
+/* .welcome {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .8;
+    background: black;
+    color: white;
+    z-index: 2;
+    pointer-events: none;
+    font-size: 1.4rem;
+
+}
+
+.welcometitle {
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 25%;
+    margin: auto;
+}
+.welcometwo {
+    pointer-events: auto;
+    color: red;
+    border: 1px dashed red;
+    border-radius: 5px;
+    padding: 1%;
+    margin: auto;
+    text-align: center;
+    width: 13%;
+    font-size: 1.8rem;
+}
+
+.welcome:hover {
+    display: none;
+} */
+
+/* 
+===============================
+button
+===============================
+*/
+
+button {
+    border-radius: 1rem;
+    padding: 1rem 10%;
+    background: grey;
+    opacity: .8;
+    color: white;
+    width: 80%;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+}
+
+button:hover {
+    opacity: .8;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+/* 
+===============================
+dropdown
+===============================
+*/
+
+.drop {
+    display: block;
+    margin: auto;
+}
+
+.dropdown {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.drop:hover .around {
+    display: none;
+}
+
+.drop:hover .dropdown{
+    display: block;
+    width: 200px;
+    margin-bottom: 5px;
+
+}
+
+/* 
+===============================
+containers
+===============================
+*/
+
+.flexsize {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexcol {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexline {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    align-content: space-evenly;
+}
+
+.element {
+    max-width: 40vw;
+    min-width: 140px;
+    border-top: 1px dashed grey;
+}
+
+.medium {
+    display: none;
+}
+
+.mainimg {
+    width: 80%;
+    margin: 2%;
+}
+
+.wrap {
+    position: relative;
+    margin: 10px 5px 0 5px;
+}
+
+.imgback {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    opacity: 0;
+}
+
+.social { 
+    min-height: 40px;
+    padding: 20px;    
+}
+
+a.fa.fa-facebook {
+    padding-right: 0 10px;
+}
+/* 
+===============================
+media queries
+===============================
+*/
+
+@media (min-width: 500px) {
+    .drop {
+        display: none;
+    }
+    .medium {
+        display: block;
+    }
+    body {
+        padding-top: 226px;
+    }
+    html {
+        font-size: 90%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    button {
+        padding: 10px 20px;
+    }
+}
+@media (min-width: 800px) {
+    .flexsize {
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    body {
+        padding-top: 112px;
+    }
+    .element {
+        max-width: 30vw;
+        min-width: 140px;
+        border-top: 1px dashed grey;
+    }
+    html {
+        font-size: 110%;
+    }
+    .mainimg {
+        width: 50%;
+        max-width: 500px;
+        margin: 2%;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+
+    button {
+        padding: 15px 30px;
+    }
+}
+/* 
+===============================
+footer
+===============================
+*/
+
+footer {
+    background: #e0c18d;
+    font-size: 2rem;;
+}
+
+.start {
+    align-items: flex-start;
+}
+
+/* 
+===============================
+icons
+===============================
+*/
+
+/* dropdown menu */
+.around {
+    box-sizing: content-box;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    border: 6px solid grey;
+    border-radius: 12px;
+    justify-content: space-evenly;
+    align-items: center;
+    background: lightblue;
+  }
+  
+  .bar1 {
+    width: 80%;
+    height: 13%;
+    background: grey;
+    border-radius: 5px;
+}
+
